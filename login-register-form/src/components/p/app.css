@@ -1,0 +1,80 @@
+.pomodoro{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.pomo{
+    background-image: url(C:\Users\vismaya\Desktop\habit-tracker-final\login-register-form\src\components\p\coff2_1.svg);
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    background-size: cover;
+    opacity: .9;
+}
+.h2-pomo{
+    font-size: 4rem;
+    font-weight:400;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    border: 0cap;
+    color: azure;
+    transition: text-decoration 0.3s ease;
+}
+.timer{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom:10px;
+    color: azure;
+}
+.interval-container{
+    display: flex;
+    margin: 0 40px;
+    align-items: center;
+    color: azure;
+}
+.interval-length-container{
+    display: flex;
+    padding-bottom: 5cm;
+}
+.pomo-button{
+    padding: 5px 10px;
+    margin: 0 10px;
+    height: 25px;
+    background-color:rgb(0,70,99);
+    border: none;
+    outline: none;
+    color: azure;
+    width: 60px;
+    border-radius: 2px;
+}
+.pomo-button:disabled{
+    cursor: not-allowed;
+}
+.interval-length{
+    font-size: 2rem;
+    margin: 0 10px;
+}
+.timer-container{
+    border: 2px solid rgb(0,50,70);
+    margin-top: 90px;
+    border-radius: 25px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.50);
+    padding: 10px;
+    position:50;
+    color: azure;
+}
+.time{
+    font-size: 3rem;
+}
+.timer-action{
+    margin-top: 25px;
+    text-align: center;
+}

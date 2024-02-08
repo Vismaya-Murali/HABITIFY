@@ -1,0 +1,170 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+	--orange: rgba(255, 69, 0, 0.7); /* Transparent orange */
+	--light-orange: rgba(255, 165, 0, 0.5); /* Lighter yellow-orange background */
+	--red: rgba(255, 0, 0, 1); /* Red */
+  }
+  
+  * {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+  }
+  
+  body.todo {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF; /* Text color set to white */
+	background-image: url("C:/Users/vismaya/Desktop/habit-tracker-final/login-register-form/ASSETS/todo.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
+  }
+  
+  .todo-header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+  }
+  
+  header h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 1rem;
+  }
+  
+  #new-task-form {
+	display: flex;
+  }
+  
+  input,
+  button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+  }
+  
+  #new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--light-orange); /* Lighter yellow-orange background */
+	padding: 1rem;
+	border-radius: 1rem;
+	color: #000; /* Text color set to black */
+	font-size: 1.25rem;
+	position: relative;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+  }
+  
+  #new-task-input::placeholder {
+	color: #000; /* Text color set to black */
+	font-size: 1.25rem;
+	text-align: center;
+  }
+  
+  #new-task-submit {
+	color: transparent;
+	font-size: 1.25rem;
+	font-weight: 700;
+	background: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text; /* For WebKit-based browsers */
+	background-clip: text; /* For modern browsers */
+	color: transparent; /* For modern browsers */
+	cursor: pointer;
+	transition: 0.4s;
+  }
+  
+  
+  #new-task-submit:hover {
+	opacity: 0.8;
+  }
+  
+  #new-task-submit:active {
+	opacity: 0.6;
+  }
+  
+  main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+  }
+  
+  .task-list {
+	padding: 1rem;
+  }
+  
+  .task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 1rem;
+  }
+  
+  #tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--light-orange); /* Lighter yellow-orange background for task boxes */
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow to task boxes */
+  }
+  
+  .task .content {
+	flex: 1 1 0%;
+  }
+  
+  .task .content .text {
+	color: #000; /* Text color set to black for task content */
+	font-size: 1.125rem; /* Font size set to 1.125rem */
+  }
+  
+  .task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+  }
+  
+  .task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+  }
+  
+  .task .actions button:hover {
+	opacity: 0.8;
+  }
+  
+  .task .actions button:active {
+	opacity: 0.6;
+  }
+  
+  .task .actions .edit {
+	color: transparent; /* Hide text content */
+	font-size: 1.125rem;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-clip: text; /* Use background-clip for modern browsers */
+	-webkit-background-clip: text; /* Provide fallback for WebKit-based browsers */
+	color: transparent; /* Hide text content for modern browsers */
+	-webkit-text-fill-color: transparent; /* Provide fallback for WebKit-based browsers */
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow to edit button */
+  }
+  
+  .task .actions .delete {
+	color: crimson;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow to delete button */
+  }
+  
+  
